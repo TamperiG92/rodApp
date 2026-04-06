@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/navigation_garaje"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Garaje" />
+    <item
+        android:id="@+id/navigation_mapa"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="Mapa" />
+    <item
+        android:id="@+id/navigation_historial"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Historial" />
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Perfil" />
+</menu>

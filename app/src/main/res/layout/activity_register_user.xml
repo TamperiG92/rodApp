@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:fillViewport="true"
+    tools:context=".activities.auth.register_user">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btn_back_desc"
+            android:src="@android:drawable/ic_menu_revert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title_crear_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/crear_cuenta"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+        <TextView
+            android:id="@+id/subtitle_comunidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/subtitle_comunidad"
+            android:textColor="@color/gris_hint"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_crear_cuenta" />
+
+        <!-- Nombre Completo -->
+        <TextView
+            android:id="@+id/lbl_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_nombre"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_comunidad" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="name"
+            android:background="@drawable/texto_usuario"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_nombre" />
+
+        <!-- Correo -->
+        <TextView
+            android:id="@+id/lbl_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_correo"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/texto_usuario"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_correo" />
+
+        <!-- Contraseña -->
+        <TextView
+            android:id="@+id/lbl_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_pass"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_correo" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:background="@drawable/texto_usuario"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:drawableEnd="@android:drawable/ic_menu_view"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_pass_registro"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pass" />
+
+        <CheckBox
+            android:id="@+id/check_terminos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:buttonTint="@color/button_blue"
+            android:text="@string/acepto_terminos"
+            android:textColor="@color/gris_hint"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_crear_cuenta"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/boton_redondo"
+            android:text="@string/crear_cuenta"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_terminos" />
+
+        <LinearLayout
+            android:id="@+id/layout_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_crear_cuenta">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ya_tienes_cuenta"
+                android:textColor="@color/gris_hint" />
+
+            <TextView
+                android:id="@+id/btn_ir_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inicia_sesion"
+                android:textColor="@color/button_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

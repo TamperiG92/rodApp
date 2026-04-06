@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores oficiales de RodApp -->
+    <color name="background_blue">#0A191E</color>
+    <color name="dark_blue">#122329</color>
+    <color name="button_blue">#00BCD4</color>
+    <color name="gris_hint">#9E9E9E</color>
 </resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background_blue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Guías para diseño responsivo -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <!-- Logo con fondo circular -->
+        <ImageView
+            android:id="@+id/logo_rodapp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Logo RodApp"
+            android:padding="20dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_top"
+            app:tint="@color/button_blue" />
+
+        <TextView
+            android:id="@+id/title_rodapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="RodApp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_rodapp" />
+
+        <TextView
+            android:id="@+id/subtitle_bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido de nuevo"
+            android:textColor="@color/button_blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_rodapp" />
+
+        <!-- Campos de Entrada -->
+        <TextView
+            android:id="@+id/lbl_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Correo electrónico"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_bienvenida" />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/texto_usuario"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="12dp"
+            android:hint="ejemplo@correo.com"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_correo" />
+
+        <TextView
+            android:id="@+id/lbl_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Contraseña"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_correo" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="password"
+            android:background="@drawable/texto_usuario"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="12dp"
+            android:hint="••••••••"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_pass" />
+
+        <TextView
+            android:id="@+id/btn_olvido_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="@color/button_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+
+        <!-- Botón de Iniciar Sesión Responsivo -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/boton_redondo"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_olvido_pass" />
+
+        <!-- Sección Social -->
+        <TextView
+            android:id="@+id/txt_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="O INICIA CON"
+            android:textColor="@color/gris_hint"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <View
+            android:id="@+id/divider_left"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gris_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_social"
+            app:layout_constraintEnd_toStartOf="@+id/txt_social"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_social" />
+
+        <View
+            android:id="@+id/divider_right"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/gris_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_social"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_social"
+            app:layout_constraintTop_toTopOf="@+id/txt_social" />
+
+        <ImageButton
+            android:id="@+id/btn_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Iniciar sesión con Google"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/google_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_social" />
+
+        <!-- Pie de página responsivo -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_google"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta? "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btn_ir_registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístrate"
+                android:textColor="@color/button_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
