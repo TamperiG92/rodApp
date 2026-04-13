@@ -1,33 +1,28 @@
-package com.example.rodapp
+package com.example.rodapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.rodapp.databinding.FragmentGarajeBinding
+import com.example.rodapp.databinding.FragmentHistorialBinding
 
-class SecondFragment : Fragment() {
+class HistorialFragment : Fragment() {
 
-    private var _binding: FragmentGarajeBinding? = null
+    private var _binding: FragmentHistorialBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentGarajeBinding.inflate(inflater, container, false)
+        _binding = FragmentHistorialBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonGarajeVolver.setOnClickListener {
-            // El ID del destino es navigation_home según el nav_graph.xml actualizado
-            findNavController().navigate(R.id.navigation_home)
-        }
+        // Lógica para filtros o agregar actividad
     }
 
     override fun onDestroyView() {

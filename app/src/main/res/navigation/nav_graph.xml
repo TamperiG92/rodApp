@@ -3,26 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/navigation_home">
 
+    <!-- Inicio -->
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.rodapp.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/navigation_home"
+        android:name="com.example.rodapp.fragments.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+    <!-- Garaje -->
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.rodapp.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/navigation_garaje"
+        android:name="com.example.rodapp.fragments.GarajeFragment"
+        android:label="Mi Garaje"
+        tools:layout="@layout/fragment_garaje" />
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+    <!-- Historial -->
+    <fragment
+        android:id="@+id/navigation_historial"
+        android:name="com.example.rodapp.fragments.HistorialFragment"
+        android:label="Historial"
+        tools:layout="@layout/fragment_historial" />
+
+    <!-- Perfil -->
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.rodapp.fragments.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
 </navigation>

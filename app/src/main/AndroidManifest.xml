@@ -16,7 +16,7 @@
         <activity
             android:name=".activities.inicio.firstActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.RodApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -27,25 +27,25 @@
         <activity
             android:name=".activities.inicio.Start_activity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.RodApp" />
 
         <!-- Login -->
         <activity
             android:name=".activities.auth.login"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.RodApp" />
 
         <!-- Registro -->
         <activity
             android:name=".activities.auth.register_user"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.RodApp" />
 
         <!-- Actividad Principal (Post-Login) -->
         <activity
             android:name=".activities.main.MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.RodApp" />
 
     </application>
 

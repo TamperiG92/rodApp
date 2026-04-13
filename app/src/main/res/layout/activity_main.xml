@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_blue"
     android:fitsSystemWindows="true"
     tools:context=".activities.main.MainActivity">
 
@@ -15,14 +16,17 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.RodApp.AppBarOverlay">
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/background_blue"
-                app:popupTheme="@style/Theme.RodApp.PopupOverlay" />
+                app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
+                app:navigationIconTint="@color/button_blue"
+                app:title="" /> <!-- Sin logo ni texto para máxima limpieza -->
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,20 +37,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/fab_margin"
-            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
             android:backgroundTint="@color/button_blue"
+            android:contentDescription="Agregar"
+            app:fabCustomSize="65dp"
+            app:maxImageSize="35dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.SmallComponent"
             app:srcCompat="@android:drawable/ic_input_add"
-            android:contentDescription="Agregar nuevo registro" />
+            app:tint="@color/black" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_gravity="bottom"
             android:background="@color/dark_blue"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_color_state"
+            app:itemTextColor="@color/nav_item_color_state"
+            app:labelVisibilityMode="labeled"
             app:menu="@menu/menu_button_nav" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

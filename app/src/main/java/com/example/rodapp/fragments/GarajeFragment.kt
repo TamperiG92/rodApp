@@ -1,4 +1,4 @@
-package com.example.rodapp
+package com.example.rodapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.rodapp.R
 import com.example.rodapp.databinding.FragmentGarajeBinding
 
-class SecondFragment : Fragment() {
+class GarajeFragment : Fragment() {
 
     private var _binding: FragmentGarajeBinding? = null
     private val binding get() = _binding!!
@@ -25,7 +26,6 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonGarajeVolver.setOnClickListener {
-            // El ID del destino es navigation_home según el nav_graph.xml actualizado
             findNavController().navigate(R.id.navigation_home)
         }
     }

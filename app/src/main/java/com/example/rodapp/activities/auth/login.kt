@@ -20,8 +20,16 @@ class login : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener {
             // Interactividad visual: Salto a la actividad principal
-            startActivity(Intent(this, MainActivity::class.java))
+            // Usamos la MainActivity correcta ubicada en el paquete activities.main
+            val intent = Intent(this, com.example.rodapp.activities.main.MainActivity::class.java)
+            // Aseguramos que se limpie la pila de actividades
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
             finish()
+        }
+
+        binding.btnIrRegistro.setOnClickListener {
+            startActivity(Intent(this, register_user::class.java))
         }
     }
 }

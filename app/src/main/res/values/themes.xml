@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.RodApp" parent="Base.Theme.RodApp" />
+
+    <style name="Theme.RodApp.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+
+    <style name="Theme.RodApp.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
 </resources>

@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/background_blue"
     android:fillViewport="true"
-    tools:context=".FirstFragment">
+    tools:context=".fragments.InicioFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp">
 
-        <!-- Card de Resumen Total -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_resumen"
             android:layout_width="match_parent"
@@ -62,7 +61,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    android:contentDescription="Icono decorativo" />
 
                 <TextView
                     android:id="@+id/txt_info_odometro"
@@ -81,7 +81,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Ilustración Central -->
         <FrameLayout
             android:id="@+id/layout_ilustracion"
             android:layout_width="match_parent"
@@ -93,7 +92,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.2"
-                android:src="@drawable/circle_background" />
+                android:src="@drawable/circle_background"
+                android:contentDescription="Fondo decorativo" />
 
             <ImageView
                 android:id="@+id/img_placeholder_moto"
@@ -104,10 +104,10 @@
                 android:backgroundTint="#23353D"
                 android:padding="20dp"
                 android:src="@android:drawable/ic_menu_gallery"
-                app:tint="@color/gris_hint" />
+                app:tint="@color/gris_hint"
+                android:contentDescription="Espacio para foto de moto" />
         </FrameLayout>
 
-        <!-- Mensaje de bienvenida -->
         <TextView
             android:id="@+id/title_ready"
             android:layout_width="wrap_content"
@@ -142,7 +142,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/subtitle_ready"
-            app:tint="@color/button_blue" />
+            app:tint="@color/button_blue"
+            android:contentDescription="Flecha indicadora" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
