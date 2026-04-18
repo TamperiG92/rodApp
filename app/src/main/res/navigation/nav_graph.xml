@@ -61,4 +61,32 @@
         android:label="Nuevo Mantenimiento"
         tools:layout="@layout/fragment_mantenimiento" />
 
+    <!-- Registro de SOAT -->
+    <fragment
+        android:id="@+id/navigation_registro_soat"
+        android:name="com.example.rodapp.fragments.RegistroSOATFragment"
+        android:label="Registro de SOAT"
+        tools:layout="@layout/fragment_registro_soat" />
+
+    <!-- Registro de RTM -->
+    <fragment
+        android:id="@+id/navigation_registro_rtm"
+        android:name="com.example.rodapp.fragments.RegistroRTMFragment"
+        android:label="Registro de RTM"
+        tools:layout="@layout/fragment_registro_rtm" />
+
+    <!-- Documentos Adicionales -->
+    <fragment
+        android:id="@+id/navigation_documentos_adicionales"
+        android:name="com.example.rodapp.fragments.DocumentosAdicionalesFragment"
+        android:label="Documentos Adicionales"
+        tools:layout="@layout/fragment_documentos_adicionales" />
+
+    <!-- Nuevo Documento (Personalizado) -->
+    <fragment
+        android:id="@+id/navigation_nuevo_documento"
+        android:name="com.example.rodapp.fragments.NuevoDocumentoFragment"
+        android:label="Nuevo Documento"
+        tools:layout="@layout/fragment_nuevo_documento" />
+
 </navigation>

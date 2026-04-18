@@ -41,6 +41,44 @@
     <string name="registro_exitoso">Tu registro ha sido exitoso. Ya puedes acceder a todas las funciones de RodApp.</string>
     <string name="volver_inicio">Volver al inicio</string>
 
+    <!-- SOAT -->
+    <string name="title_registro_soat">Registro de SOAT</string>
+    <string name="lbl_n_poliza">Número de póliza</string>
+    <string name="hint_n_poliza">Ej. 1234567890</string>
+    <string name="lbl_aseguradora">Aseguradora</string>
+    <string name="lbl_inicio_vigencia">Inicio vigencia</string>
+    <string name="lbl_vencimiento">Vencimiento</string>
+    <string name="hint_fecha">mm/dd/yyyy</string>
+    <string name="info_soat">Asegúrate de que los datos coincidan exactamente con tu documento físico o digital para recibir alertas precisas.</string>
+    <string name="btn_guardar_doc">Guardar Documento</string>
+    <string name="paso_soat">PASO 1 DE 2: INFORMACIÓN BÁSICA</string>
+    <string name="btn_close_desc">Cerrar</string>
+
+    <!-- RTM -->
+    <string name="title_registro_rtm">Registro de RTM</string>
+    <string name="lbl_detalles_doc">Detalles del documento</string>
+    <string name="subtitle_rtm">Ingresa la información de tu Revisión Técnico-Mecánica para mantenerte al día.</string>
+    <string name="lbl_n_certificado">NÚMERO DE CERTIFICADO</string>
+    <string name="lbl_nombre_cda">NOMBRE DEL CDA</string>
+    <string name="hint_cda">Ej: CDA del Norte</string>
+    <string name="lbl_expedicion">EXPEDICIÓN</string>
+    <string name="lbl_foto_rtm">FOTO DEL DOCUMENTO</string>
+    <string name="txt_subir_foto">Subir foto de la RTM</string>
+    <string name="txt_formatos_foto">JPG, PNG HASTA 5MB</string>
+    <string name="info_rtm">Asegúrate de que los datos coincidan exactamente con tu documento físico.</string>
+    <string name="btn_finalizar_registro">Finalizar Registro</string>
+
+    <!-- Perfil -->
+    <string name="title_configuracion">Configuración</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="lbl_cuenta">CUENTA</string>
+    <string name="lbl_notificaciones">NOTIFICACIONES</string>
+    <string name="label_notif_push">Notificaciones Push</string>
+    <string name="perfil_nombre_placeholder">Carlos Rodríguez</string>
+    <string name="perfil_moto_placeholder">Yamaha MT-09 (2023)</string>
+    <string name="perfil_email_placeholder">carlos.rod@example.com</string>
+    <string name="camara_desc">Tomar foto</string>
+
     <!-- Fragmentos y Navegación -->
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
