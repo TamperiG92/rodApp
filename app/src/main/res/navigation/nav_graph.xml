@@ -12,12 +12,26 @@
         android:label="Inicio"
         tools:layout="@layout/fragment_inicio" />
 
-    <!-- Garaje -->
+    <!-- Garaje (Estado Inicial/Vacío) -->
     <fragment
         android:id="@+id/navigation_garaje"
         android:name="com.example.rodapp.fragments.GarajeFragment"
         android:label="Mi Garaje"
         tools:layout="@layout/fragment_garaje" />
+
+    <!-- Registro de Moto -->
+    <fragment
+        android:id="@+id/navigation_registro_moto"
+        android:name="com.example.rodapp.fragments.RegistroMotoFragment"
+        android:label="Registro de tu Moto"
+        tools:layout="@layout/fragment_registro_moto" />
+
+    <!-- Garaje con Documentos (Estado con Moto) -->
+    <fragment
+        android:id="@+id/navigation_garaje_documentos"
+        android:name="com.example.rodapp.fragments.GarajeDocumentosFragment"
+        android:label="Garaje"
+        tools:layout="@layout/fragment_garaje_documentos" />
 
     <!-- Historial -->
     <fragment
@@ -32,5 +46,19 @@
         android:name="com.example.rodapp.fragments.PerfilFragment"
         android:label="Perfil"
         tools:layout="@layout/fragment_perfil" />
+
+    <!-- Formulario Combustible -->
+    <fragment
+        android:id="@+id/navigation_combustible"
+        android:name="com.example.rodapp.fragments.CombustibleFragment"
+        android:label="Nuevo Combustible"
+        tools:layout="@layout/fragment_combustible" />
+
+    <!-- Formulario Mantenimiento -->
+    <fragment
+        android:id="@+id/navigation_mantenimiento"
+        android:name="com.example.rodapp.fragments.MantenimientoFragment"
+        android:label="Nuevo Mantenimiento"
+        tools:layout="@layout/fragment_mantenimiento" />
 
 </navigation>

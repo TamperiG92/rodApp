@@ -3,9 +3,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Colores oficiales de RodApp -->
-    <color name="background_blue">#0A191E</color>
-    <color name="dark_blue">#122329</color>
+    <!-- RodApp Palette -->
+    <color name="background_blue">#0A1619</color>
+    <color name="dark_blue">#132328</color>
     <color name="button_blue">#00BCD4</color>
-    <color name="gris_hint">#9E9E9E</color>
+    <color name="gris_hint">#8E9BA0</color>
+
+    <!-- FAB Action Colors -->
+    <color name="fuel_blue">#00ACC1</color>
+    <color name="maint_orange">#FF5722</color>
+
+    <!-- Nav Item Colors -->
+    <color name="nav_item_unselected">#8E9BA0</color>
+    <color name="nav_item_selected">#00BCD4</color>
 </resources>

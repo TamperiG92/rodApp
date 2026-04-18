@@ -1,33 +1,37 @@
 package com.example.rodapp.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.rodapp.R
-import com.example.rodapp.databinding.FragmentGarajeBinding
+import com.example.rodapp.databinding.FragmentRegistroMotoBinding
 
-class GarajeFragment : Fragment() {
+class RegistroMotoFragment : Fragment() {
 
-    private var _binding: FragmentGarajeBinding? = null
+    private var _binding: FragmentRegistroMotoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentGarajeBinding.inflate(inflater, container, false)
+        _binding = FragmentRegistroMotoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        
-        binding.btnRegistrarMoto.setOnClickListener {
-            // Navegar al formulario de registro de moto
-            findNavController().navigate(R.id.navigation_registro_moto)
+
+        binding.btnBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
+
+        binding.btnGuardarEmpezar.setOnClickListener {
+            // Navegar al estado de garaje con documentos
+            findNavController().navigate(R.id.navigation_garaje_documentos)
         }
     }
 

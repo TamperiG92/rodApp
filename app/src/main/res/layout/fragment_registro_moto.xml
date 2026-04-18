@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="110dp"> <!-- Aumento significativo del padding inferior -->
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btn_back_desc"
+            android:src="@android:drawable/ic_menu_revert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title_registro_moto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de tu Moto"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_icon_moto"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/dark_blue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1F3238"
+            app:strokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_registro_moto">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:tint="@color/button_blue"
+                android:alpha="0.6"
+                android:contentDescription="@null" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/lbl_detalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Detalles de tu máquina"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_icon_moto" />
+
+        <TextView
+            android:id="@+id/subtitle_detalles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ingresa los datos para empezar el seguimiento de mantenimiento y rendimiento."
+            android:textColor="@color/gris_hint"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_detalles" />
+
+        <!-- Campos de entrada -->
+        <TextView
+            android:id="@+id/lbl_marca_moto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MARCA DE LA MOTO"
+            android:textColor="@color/button_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_detalles" />
+
+        <Spinner
+            android:id="@+id/spinner_marca"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/texto_usuario"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_marca_moto" />
+
+        <TextView
+            android:id="@+id/lbl_modelo_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="MODELO / REFERENCIA"
+            android:textColor="@color/button_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_marca" />
+
+        <EditText
+            android:id="@+id/et_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/texto_usuario"
+            android:hint="Ej. MT-09, R6, Pulsar 200"
+            android:paddingStart="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_modelo_ref" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_cil_placa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_modelo">
+
+            <TextView
+                android:id="@+id/lbl_cilindrada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CILINDRADA"
+                android:textColor="@color/button_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/lbl_placa"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbl_placa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="PLACA"
+                android:textColor="@color/button_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/lbl_cilindrada"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_cilindrada"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/texto_usuario"
+                android:hint="CC"
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gris_hint"
+                android:importantForAutofill="no"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_cilindrada"
+                app:layout_constraintStart_toStartOf="@+id/lbl_cilindrada"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_cilindrada" />
+
+            <EditText
+                android:id="@+id/et_placa"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/texto_usuario"
+                android:hint="ABC-12D"
+                android:paddingStart="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gris_hint"
+                android:inputType="textCapCharacters"
+                android:importantForAutofill="no"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_placa"
+                app:layout_constraintStart_toStartOf="@+id/lbl_placa"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_placa" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/lbl_odometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="ODÓMETRO INICIAL (KM)"
+            android:textColor="@color/button_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_cil_placa" />
+
+        <EditText
+            android:id="@+id/et_odometro"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/texto_usuario"
+            android:hint="Ej. 12500"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gris_hint"
+            android:importantForAutofill="no"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_odometro" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_guardar_empezar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Guardar y Empezar"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_blue"
+            app:cornerRadius="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_odometro"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

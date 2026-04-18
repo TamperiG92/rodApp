@@ -26,26 +26,11 @@
                 android:background="@color/background_blue"
                 app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
                 app:navigationIconTint="@color/button_blue"
-                app:title="" /> <!-- Sin logo ni texto para máxima limpieza -->
+                app:title="" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
         <include layout="@layout/content_main" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="100dp"
-            android:backgroundTint="@color/button_blue"
-            android:contentDescription="Agregar"
-            app:fabCustomSize="65dp"
-            app:maxImageSize="35dp"
-            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.SmallComponent"
-            app:srcCompat="@android:drawable/ic_input_add"
-            app:tint="@color/black" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"

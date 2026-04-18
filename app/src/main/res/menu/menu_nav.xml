@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/navigation_home"
             android:icon="@android:drawable/ic_menu_today"
             android:title="Inicio" />
         <item
@@ -13,17 +13,17 @@
             android:icon="@android:drawable/btn_star"
             android:title="Favoritos" />
         <item
-            android:id="@+id/nav_perfil"
+            android:id="@+id/navigation_perfil"
             android:icon="@android:drawable/ic_menu_myplaces"
             android:title="Perfil" />
     </group>
 
-    <item android:title="Otros">
+    <item android:title="Cuenta">
         <menu>
             <item
-                android:id="@+id/nav_configuracion"
-                android:icon="@android:drawable/ic_menu_preferences"
-                android:title="Configuración" />
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Cerrar Sesión" />
         </menu>
     </item>
 
