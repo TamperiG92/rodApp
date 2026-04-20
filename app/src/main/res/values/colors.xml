@@ -33,6 +33,19 @@
     <color name="text_hint">#94A3B8</color> <!-- Gris de ayuda -->
     <color name="text_white_02">#05FFFFFF</color> <!-- Blanco (0.2%) -->
 
+    <!-- Alert Colors -->
+    <color name="alert_red">#BA1A1A</color>
+    <color name="alert_red_10">#1ABA1A1A</color>
+    <color name="alert_red_20">#33BA1A1A</color>
+    <color name="alert_orange">#F97316</color>
+    <color name="alert_orange_10">#1AF97316</color>
+    <color name="alert_orange_20">#33F97316</color>
+    <color name="warning_yellow">#F59E0B</color>
+    <color name="warning_yellow_10">#1AF59E0B</color>
+    <color name="emerald_green">#10B981</color>
+    <color name="emerald_green_10">#1A10B981</color>
+    <color name="emerald_green_20">#3310B981</color>
+
     <!-- Legacy Mapping (To avoid breaking existing code while migrating) -->
     <color name="background_blue">@color/background_dark</color>
     <color name="dark_blue">@color/surface_accent</color>
