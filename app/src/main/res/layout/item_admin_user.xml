@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="@color/black_background">
+
+    <!-- Avatar Circle -->
+    <TextView
+        android:id="@+id/tv_avatar_initials"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/design_snackbar_background"
+        android:backgroundTint="#0A3A40"
+        android:gravity="center"
+        android:text="JD"
+        android:textColor="@color/cyan_primary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Julian Diaz"
+        android:textColor="@color/text_light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_avatar_initials"
+        app:layout_constraintEnd_toStartOf="@+id/tv_motorcycle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Motorcycle -->
+    <TextView
+        android:id="@+id/tv_motorcycle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:text="MT-09 SP"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_user_name"
+        app:layout_constraintEnd_toStartOf="@+id/dot_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Docs Indicator -->
+    <View
+        android:id="@+id/dot_1"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/design_snackbar_background"
+        android:backgroundTint="@color/cyan_primary"
+        app:layout_constraintEnd_toStartOf="@+id/dot_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/dot_2"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/design_snackbar_background"
+        android:backgroundTint="@color/cyan_primary"
+        tools:backgroundTint="@color/alert_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

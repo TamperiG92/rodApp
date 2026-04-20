@@ -89,4 +89,17 @@
         android:label="Nuevo Documento"
         tools:layout="@layout/fragment_nuevo_documento" />
 
+    <!-- Mapa (Visual) -->
+    <fragment
+        android:id="@+id/navigation_mapa"
+        android:name="com.example.rodapp.fragments.MapaFragment"
+        android:label="MapaFragment"
+        tools:layout="@layout/fragment_mapa"/>
+
+    <fragment
+        android:id="@+id/documentoDetalleFragment"
+        android:name="com.example.rodapp.fragments.DocumentoDetalleFragment"
+        android:label="Detalle de Documento"
+        tools:layout="@layout/fragment_documento_detalle" />
+
 </navigation>

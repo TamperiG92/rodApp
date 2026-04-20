@@ -4,6 +4,16 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- RodApp Palette -->
+    <color name="black_background">#101F22</color>
+    <color name="surface_card">#192F33</color>
+    <color name="surface_stroke">#234248</color>
+    <color name="cyan_primary">#11B4D4</color>
+    <color name="text_light">#F1F5F9</color>
+    <color name="text_gray">#94A3B8</color>
+    <color name="text_dark_slate">#64748B</color>
+    <color name="alert_red">#FF4D4C</color>
+
+    <!-- Missing colors causing build errors -->
     <color name="background_blue">#0A1619</color>
     <color name="dark_blue">#132328</color>
     <color name="button_blue">#00BCD4</color>
@@ -14,6 +24,6 @@
     <color name="maint_orange">#FF5722</color>
 
     <!-- Nav Item Colors -->
-    <color name="nav_item_unselected">#8E9BA0</color>
-    <color name="nav_item_selected">#00BCD4</color>
+    <color name="nav_item_unselected">@color/text_gray</color>
+    <color name="nav_item_selected">@color/cyan_primary</color>
 </resources>

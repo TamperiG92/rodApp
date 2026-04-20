@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background">
+
+    <!-- App Bar Top -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="@color/cyan_primary" />
+            
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="R O D A P P"
+            android:textColor="@color/cyan_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"/>
+            
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="@drawable/design_snackbar_background"
+            android:backgroundTint="@color/surface_stroke"/>
+    </LinearLayout>
+
+    <!-- Search Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:boxBackgroundColor="@color/black_background"
+        app:boxStrokeColor="@color/surface_stroke"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:startIconTint="@color/text_dark_slate"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by name or motorcycle..."
+            android:textColorHint="@color/text_dark_slate"
+            android:textColor="@color/text_light"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tv_section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Active Users"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/search_layout"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="FILTER"
+        android:textSize="10sp"
+        android:textColor="@color/cyan_primary"
+        app:backgroundTint="@color/surface_card"
+        app:cornerRadius="8dp"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconTint="@color/cyan_primary"
+        app:iconSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_section_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_section_title"/>
+
+    <!-- Table Header Text -->
+    <LinearLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#132328"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_section_title">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="USER NAME"
+            android:textSize="10sp"
+            android:textColor="@color/text_dark_slate"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+            
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="MOTORCYCLE"
+            android:textSize="10sp"
+            android:textColor="@color/text_dark_slate"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+            
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="DOCS"
+            android:textSize="10sp"
+            android:textColor="@color/text_dark_slate"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:background="#111B1E"
+        app:layout_constraintTop_toBottomOf="@id/table_header"
+        app:layout_constraintBottom_toTopOf="@id/bottom_cards_container"/>
+
+    <!-- Bottom summary cards -->
+    <LinearLayout
+        android:id="@+id/bottom_cards_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/surface_card"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="0dp">
+            
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan_primary"/>
+                
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL USERS"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_dark_slate"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+                    
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="1,284"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_light"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="@color/surface_card"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="0dp">
+            
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/alert_red"/>
+                
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALERTS"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_dark_slate"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+                    
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="42"
+                    android:textSize="22sp"
+                    android:textColor="@color/alert_red"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

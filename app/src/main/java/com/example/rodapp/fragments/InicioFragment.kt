@@ -42,6 +42,17 @@ class InicioFragment : Fragment() {
             findNavController().navigate(R.id.navigation_mantenimiento)
             toggleMenu()
         }
+
+        // Lógica para alternar el diseño "Lleno" (Mockup visual) vs "Vacío"
+        binding.btnToggleMockup.setOnClickListener {
+            if (binding.layoutVacio.visibility == View.VISIBLE) {
+                binding.layoutVacio.visibility = View.GONE
+                binding.layoutLleno.visibility = View.VISIBLE
+            } else {
+                binding.layoutVacio.visibility = View.VISIBLE
+                binding.layoutLleno.visibility = View.GONE
+            }
+        }
     }
 
     private fun toggleMenu() {

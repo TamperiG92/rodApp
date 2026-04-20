@@ -6,15 +6,38 @@
     android:layout_height="match_parent"
     android:background="@color/background_blue">
 
+    <!-- Boton Toggle Mockup (Eye Icon) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_toggle_mockup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        app:backgroundTint="#24373F"
+        app:tint="@color/cyan_primary"
+        app:borderWidth="0dp"
+        app:elevation="0dp" />
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_height="wrap_content">
+
+            <!-- ========================= -->
+            <!-- ESTADO VACÍO (Original)  -->
+            <!-- ========================= -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_vacio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_resumen"
@@ -102,6 +125,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/layout_ilustracion" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- ========================= -->
+            <!-- ESTADO LLENO (Mockup)    -->
+            <!-- ========================= -->
+            <FrameLayout
+                android:id="@+id/layout_lleno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/fragment_inicio_lleno" />
+
+            </FrameLayout>
+
+        </FrameLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- Menú de acciones del FAB -->
