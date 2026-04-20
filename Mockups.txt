@@ -1,0 +1,35 @@
+Mockups
+
+LOGIN (activity_login) necesario ajuste de colores
+SSO reemplazado por google
+SSO CONFIRMACION reemplazado por google
+LOGIN EXITOSO (fragment_registro_exitoso) ajuste de colores
+CREAR CUENTA (activity_register_user) ajuste de colores
+CONFIGURACION DE PERFIL (fragment_perfil) ajuste de elementos y colores
+PLANTILLA REG SOAT (fragment_registro_SOAT) ajuste de texto y colores
+DETALLE DOCUMENTO RTM no existe por falta de datos
+PERFIL no identificado
+GARAJE VACIO 1 (fragment_garaje) ajuste de colores y textos
+GARAJE VACIO 2 (fragment_registro_moto) ajuste de colores y textos
+GARAJE VACIO 3 (fragment_garaje_documentos) ajuste de colores, textos y tamaños
+GARAJE (SIN DOCUMENTOS) 1 (fragment_documentos_adicionales) ajuste de colores y textos
+PLANTILLA REG RTM (fragment_registro_rtm) ajuste colores y textos
+GARAJE LLENO no existe por falta de datos
+BODY (DETALLE DOCUMENTO SOAT) no existe por falta de datos
+INICIO LLENO (fragment_first/inicio) ajuste de colores, textos y logos
+NOTIFICACION DE RODAPP ABIERTO no existe 
+GARAJE (SIN DOCUMENTOS) 2 (fragment_nuevo_documento) ajuste colores y textos
+HISTORIAL VACIO (fragment_historial) ajuste de colores y organizacion
+MAPAS no existe por falta aplicativo
+RUTA SELECCIONADA no existe por aplicativo de mapas
+FORMULARIO DE COMBUSTIBLE (fragment_combustible) ajuste colores, textos y añadir cantidad de combustible y guardar posicion
+REGISTRO DE NUEVA TAREA (fragment_mantenimiento) ajuste colores, añadir cuadro texto, logo boton
+CONSEJOS no existe
+NOTIFICACIONES no existe
+INICIO VACIO (activity_main) ajuste de texto y colores
+WIDGET EN PANTALLA DE INICIO no existe
+DASHBOARD DE INICIO no definido
+REGISTRO DE COMBUSTIBLE (HISTORIAL) no existe
+HISTORIAL LLENO (HISTORIAL GENERAL) no existe
+MANTENIMIENTO Y ALERTAS (PROXIMOS EVENTOS) no existe
+ACTIVITY_START-ONBOARDING(NO ESTA EN FIGMA) ajuste de colores

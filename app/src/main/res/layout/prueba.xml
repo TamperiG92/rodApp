@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/manual"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101F22"
+    android:paddingHorizontal="24dp">
+
+    <View
+        android:id="@+id/bg_blur_top"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:background="@drawable/blur_circle_subtle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationX="80dp"
+        android:translationY="-80dp" />
+
+    <View
+        android:id="@+id/bg_blur_bottom"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:background="@drawable/blur_circle_subtle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:translationX="-80dp"
+        android:translationY="80dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/action_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <FrameLayout
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_blur_effect" />
+
+            <FrameLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/circle_cyan_border">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_check"
+                    app:tint="#11B4D4" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Exitoso"
+            android:textColor="#11B4D4"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:letterSpacing="-0.02"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:text="Tu sesión se ha iniciado correctamente. Bienvenido de nuevo."
+            android:textColor="#94A3B8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:lineSpacingExtra="11dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_primary"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Continuar"
+            android:textColor="#101F22"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="28dp"
+            app:backgroundTint="#11B4D4"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/btn_secondary"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:text="Cerrar sesión"
+            android:textColor="#94A3B8"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

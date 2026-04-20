@@ -3,17 +3,45 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- RodApp Palette -->
-    <color name="background_blue">#0A1619</color>
-    <color name="dark_blue">#132328</color>
-    <color name="button_blue">#00BCD4</color>
-    <color name="gris_hint">#8E9BA0</color>
+    <!-- Base Colors -->
+    <color name="primary">#11B4D4</color> <!-- Azul principal (100%) -->
+    <color name="primary_60">#9911B4D4</color> <!-- Azul (60%) -->
 
-    <!-- FAB Action Colors -->
-    <color name="fuel_blue">#00ACC1</color>
-    <color name="maint_orange">#FF5722</color>
+    <color name="secondary">#FF8C00</color> <!-- Naranja (100%) -->
+    <color name="secondary_20">#33FF8C00</color> <!-- Naranja (20%) -->
+    <color name="secondary_10">#1AFF8C00</color> <!-- Naranja (10%) -->
 
-    <!-- Nav Item Colors -->
-    <color name="nav_item_unselected">#8E9BA0</color>
-    <color name="nav_item_selected">#00BCD4</color>
+    <!-- Backgrounds & Surfaces -->
+    <color name="background_dark">#101F22</color> <!-- Fondo principal (100%) -->
+    <color name="background_dark_95">#F2101F22</color> <!-- Fondo (95%) -->
+    <color name="background_dark_80">#CC101F22</color> <!-- Fondo (80%) -->
+
+    <color name="surface_dark">#234248</color> <!-- Superficie/Bordes (100%) -->
+    <color name="surface_dark_50">#80234248</color> <!-- Superficie (50%) -->
+    <color name="surface_dark_40">#66234248</color> <!-- Superficie (40%) -->
+    <color name="surface_dark_30">#4D234248</color> <!-- Superficie (30%) -->
+    <color name="surface_dark_20">#33234248</color> <!-- Superficie (20%) -->
+    <color name="surface_dark_10">#1A234248</color> <!-- Superficie (10%) -->
+
+    <color name="surface_accent">#192F33</color> <!-- Acento oscuro (100%) -->
+    <color name="surface_accent_30">#4D192F33</color> <!-- Acento oscuro (30%) -->
+    <color name="surface_accent_10">#1A192F33</color> <!-- Acento oscuro (10%) -->
+
+    <!-- Texts -->
+    <color name="text_primary">#FFFFFF</color> <!-- Blanco puro -->
+    <color name="text_secondary">#F1F5F9</color> <!-- Blanco grisáceo -->
+    <color name="text_hint">#94A3B8</color> <!-- Gris de ayuda -->
+    <color name="text_white_02">#05FFFFFF</color> <!-- Blanco (0.2%) -->
+
+    <!-- Legacy Mapping (To avoid breaking existing code while migrating) -->
+    <color name="background_blue">@color/background_dark</color>
+    <color name="dark_blue">@color/surface_accent</color>
+    <color name="button_blue">@color/primary</color>
+    <color name="gris_hint">@color/text_hint</color>
+    <color name="orange_pendiente">@color/secondary</color>
+    <color name="nav_item_selected">@color/primary</color>
+    <color name="nav_item_unselected">@color/text_hint</color>
+    <color name="fuel_blue">@color/primary</color>
+    <color name="maint_orange">@color/secondary</color>
+
 </resources>

@@ -13,7 +13,7 @@
         android:padding="24dp">
 
         <!-- Guías para diseño responsivo -->
-        <androidx.constraintlayout.widget.Guideline
+        <androidx.constraintlayout.widget.Guidelineh
             android:id="@+id/guideline_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
