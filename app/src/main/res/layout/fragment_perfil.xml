@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Configuracion"
+                android:text="@string/title_configuracion"
                 android:textColor="@color/text_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="Guardar"
+                android:text="@string/btn_guardar"
                 android:textColor="@color/cyan_primary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Carlos Rodríguez"
+                android:text="@string/perfil_nombre_placeholder"
                 android:textColor="@color/text_light"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:text="Yamaha MT-09 (2023)"
+                    android:text="@string/perfil_moto_placeholder"
                     android:textColor="@color/text_gray"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -138,7 +138,7 @@
             style="@style/SectionHeaderStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CUENTA"
+            android:text="@string/lbl_cuenta"
             android:textColor="@color/text_dark_slate"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -171,12 +171,12 @@
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="Correo electrónico" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                            android:text="@string/label_correo" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="carlos.rod@example.com" android:textColor="@color/text_gray" android:textSize="12sp"/>
+                            android:text="@string/perfil_email_placeholder" android:textColor="@color/text_gray" android:textSize="12sp"/>
                     </LinearLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text=">" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
+                        android:text="@string/label_flecha_derecha" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
                 </LinearLayout>
 
                 <View android:layout_width="match_parent" android:layout_height="1dp" 
@@ -195,12 +195,12 @@
                     <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="Contraseña" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                            android:text="@string/label_pass" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="Actualizada hace 3 meses" android:textColor="@color/text_gray" android:textSize="12sp"/>
+                            android:text="@string/label_actualizada_3m" android:textColor="@color/text_gray" android:textSize="12sp"/>
                     </LinearLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text=">" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
+                        android:text="@string/label_flecha_derecha" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -210,7 +210,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NOTIFICACIONES"
+            android:text="@string/label_notificaciones_push"
             android:textColor="@color/text_dark_slate"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -241,7 +241,7 @@
                         android:src="@android:drawable/ic_popup_reminder" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Notificaciones Push" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_notif_push" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_push" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
                 </LinearLayout>
@@ -260,7 +260,7 @@
                         android:src="@android:drawable/ic_menu_preferences" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Alertas de Mantenimiento" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_alertas_mantenimiento" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switch_alerts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
                 </LinearLayout>
@@ -272,7 +272,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PREFERENCIAS"
+            android:text="@string/label_preferencias"
             android:textColor="@color/text_dark_slate"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -304,12 +304,12 @@
                         android:src="@android:drawable/ic_menu_compass" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Unidades" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_unidades" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:text="Kilómetros (km)" android:textColor="@color/text_gray" android:textSize="12sp"/>
+                        android:text="@string/label_unidades_km_full" android:textColor="@color/text_gray" android:textSize="12sp"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text=">" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
+                        android:text="@string/label_flecha_derecha" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
                 </LinearLayout>
 
                 <View android:layout_width="match_parent" android:layout_height="1dp" 
@@ -327,12 +327,12 @@
                         android:src="@android:drawable/ic_menu_day" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Tema" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_tema" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
-                        android:text="Sistema" android:textColor="@color/text_gray" android:textSize="12sp"/>
+                        android:text="@string/label_sistema" android:textColor="@color/text_gray" android:textSize="12sp"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text=">" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
+                        android:text="@string/label_flecha_derecha" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -342,7 +342,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SEGURIDAD"
+            android:text="@string/label_seguridad"
             android:textColor="@color/text_dark_slate"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -368,9 +368,9 @@
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
                     android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="Biometría" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_biometria" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="Usar FaceID para entrar" android:textColor="@color/text_gray" android:textSize="12sp"/>
+                        android:text="@string/label_biometria_desc" android:textColor="@color/text_gray" android:textSize="12sp"/>
                 </LinearLayout>
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:id="@+id/switch_biometria" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
@@ -381,7 +381,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AYUDA Y SOPORTE"
+            android:text="@string/label_ayuda_soporte"
             android:textColor="@color/text_dark_slate"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -413,7 +413,7 @@
                         android:src="@android:drawable/ic_menu_help" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Preguntas Frecuentes" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_faq" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <ImageView android:layout_width="20dp" android:layout_height="20dp"
                         android:src="@android:drawable/ic_menu_directions" app:tint="@color/text_gray" />
                 </LinearLayout>
@@ -433,9 +433,9 @@
                         android:src="@android:drawable/sym_action_call" app:tint="@color/cyan_primary" />
                     <TextView android:layout_width="0dp" android:layout_height="wrap_content"
                         android:layout_weight="1" android:layout_marginStart="16dp"
-                        android:text="Contactar Soporte" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
+                        android:text="@string/label_contacto" android:textColor="@color/text_light" android:textSize="14sp" android:textStyle="bold"/>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text=">" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
+                        android:text="@string/label_flecha_derecha" android:textColor="@color/text_gray" android:textSize="18sp" android:textStyle="bold"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -446,7 +446,7 @@
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Cerrar Sesión"
+            android:text="@string/btn_logout"
             android:textAllCaps="false"
             android:textColor="@color/maint_orange"
             android:textSize="16sp"

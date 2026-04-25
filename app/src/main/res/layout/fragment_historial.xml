@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Historial de"
+            android:text="@string/label_historial_de"
             android:textColor="@color/gris_hint"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/card_profile_small"
@@ -45,7 +45,7 @@
             android:id="@+id/txt_actividad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Actividad"
+            android:text="@string/label_actividad"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -61,7 +61,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/white"
-            android:contentDescription="Filtrar" />
+            android:contentDescription="@string/filter_desc" />
 
         <!-- Summary Cards -->
         <LinearLayout
@@ -89,21 +89,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mantenimiento"
+                        android:text="@string/label_mantenimiento"
                         android:textColor="@color/button_blue"
                         android:textSize="12sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="0"
+                        android:text="@string/label_cero"
                         android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="eventos/año"
+                        android:text="@string/label_eventos_anio"
                         android:textColor="@color/gris_hint"
                         android:textSize="10sp" />
                 </LinearLayout>
@@ -125,21 +125,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Gasto Total"
+                        android:text="@string/label_gasto_total"
                         android:textColor="#FF5722"
                         android:textSize="12sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="--"
+                        android:text="@string/label_vacio_short"
                         android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="COP/mes"
+                        android:text="@string/label_cop_mes"
                         android:textColor="@color/gris_hint"
                         android:textSize="10sp" />
                 </LinearLayout>
@@ -152,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="TENDENCIA DE GASTOS"
+            android:text="@string/label_tendencia_gastos"
             android:textColor="@color/gris_hint"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -187,7 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Sin datos este mes"
+                    android:text="@string/label_sin_datos_mes"
                     android:textColor="@color/gris_hint"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -216,14 +216,14 @@
                     android:padding="24dp"
                     android:src="@android:drawable/ic_menu_today"
                     app:tint="@color/button_blue"
-                    android:contentDescription="Calendario vacío" />
+                    android:contentDescription="@string/empty_calendar_desc" />
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="No tienes actividad registrada"
+                android:text="@string/label_no_actividad"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -233,7 +233,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:text="Tus tanqueos y mantenimientos\naparecerán aquí una vez los\nagregues."
+                android:text="@string/label_no_actividad_desc"
                 android:textColor="@color/gris_hint"
                 android:textSize="14sp" />
         </LinearLayout>

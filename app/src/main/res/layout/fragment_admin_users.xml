@@ -60,7 +60,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search by name or motorcycle..."
+            android:hint="@string/hint_search_users"
             android:textColorHint="@color/text_dark_slate"
             android:textColor="@color/text_light"
             android:textSize="14sp"/>
@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Active Users"
+        android:text="@string/title_active_users"
         android:textColor="@color/text_light"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginEnd="16dp"
-        android:text="FILTER"
+        android:text="@string/btn_filter_caps"
         android:textSize="10sp"
         android:textColor="@color/cyan_primary"
         app:backgroundTint="@color/surface_card"
@@ -114,7 +114,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="USER NAME"
+            android:text="@string/header_user_name"
             android:textSize="10sp"
             android:textColor="@color/text_dark_slate"
             android:textStyle="bold"
@@ -123,7 +123,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="MOTORCYCLE"
+            android:text="@string/header_motorcycle"
             android:textSize="10sp"
             android:textColor="@color/text_dark_slate"
             android:textStyle="bold"
@@ -132,7 +132,7 @@
         <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="DOCS"
+            android:text="@string/header_docs"
             android:textSize="10sp"
             android:textColor="@color/text_dark_slate"
             android:textStyle="bold"
@@ -182,7 +182,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TOTAL USERS"
+                    android:text="@string/label_total_users"
                     android:textSize="10sp"
                     android:textColor="@color/text_dark_slate"
                     android:textStyle="bold"
@@ -192,7 +192,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="1,284"
+                    android:text="@string/placeholder_total_users"
                     android:textSize="22sp"
                     android:textColor="@color/text_light"
                     android:textStyle="bold"/>
@@ -222,7 +222,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ALERTS"
+                    android:text="@string/label_alerts_caps"
                     android:textSize="10sp"
                     android:textColor="@color/text_dark_slate"
                     android:textStyle="bold"
@@ -232,7 +232,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="42"
+                    android:text="@string/placeholder_alerts"
                     android:textSize="22sp"
                     android:textColor="@color/alert_red"
                     android:textStyle="bold"/>

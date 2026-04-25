@@ -8,20 +8,29 @@
     <color name="surface_card">#192F33</color>
     <color name="surface_stroke">#234248</color>
     <color name="cyan_primary">#11B4D4</color>
+    <color name="orange_secondary">#FF8C00</color>
     <color name="text_light">#F1F5F9</color>
     <color name="text_gray">#94A3B8</color>
     <color name="text_dark_slate">#64748B</color>
-    <color name="alert_red">#FF4D4C</color>
+    <color name="alert_red">#BA1A1A</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_yellow">#FFC107</color>
 
-    <!-- Missing colors causing build errors -->
+    <!-- UI Component Colors -->
+    <color name="surface_dark">#0C2529</color>
+    <color name="surface_variant">#132328</color>
+    <color name="surface_highlight">#23353D</color>
+    <color name="surface_success">#003322</color>
+
+    <!-- Legacy Mappings -->
     <color name="background_blue">#0A1619</color>
-    <color name="dark_blue">#132328</color>
-    <color name="button_blue">#00BCD4</color>
+    <color name="dark_blue">@color/surface_variant</color>
+    <color name="button_blue">@color/cyan_primary</color>
     <color name="gris_hint">#8E9BA0</color>
 
     <!-- FAB Action Colors -->
     <color name="fuel_blue">#00ACC1</color>
-    <color name="maint_orange">#FF5722</color>
+    <color name="maint_orange">@color/orange_secondary</color>
 
     <!-- Nav Item Colors -->
     <color name="nav_item_unselected">@color/text_gray</color>

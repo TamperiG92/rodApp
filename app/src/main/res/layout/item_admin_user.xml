@@ -16,7 +16,7 @@
         android:background="@drawable/design_snackbar_background"
         android:backgroundTint="#0A3A40"
         android:gravity="center"
-        android:text="JD"
+        android:text="@string/placeholder_initials"
         android:textColor="@color/cyan_primary"
         android:textSize="14sp"
         android:textStyle="bold"
