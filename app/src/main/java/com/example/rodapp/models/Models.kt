@@ -73,3 +73,42 @@ data class UsuarioInfo(
     val lastname: String? = null,
     val correo: String? = null
 )
+
+// Modelos para lectura (Response)
+@Serializable
+data class Combustible(
+    val id: Int,
+    val created_at: String,
+    val moto_id: String,
+    val tipo_gasolina: String,
+    val costo: Double,
+    val kilometraje: Int
+)
+
+@Serializable
+data class Mantenimiento(
+    val id: Int,
+    val created_at: String,
+    val moto_id: String,
+    val tipo: String,
+    val fecha: String,
+    val kilometraje: Int,
+    val repetir_cada_km: Int? = null,
+    val notas: String? = null
+)
+
+// Clase para la UI del Historial
+sealed class HistorialItem {
+    abstract val fechaOrden: String
+    abstract val km: Int
+
+    data class GastoCombustible(val data: Combustible) : HistorialItem() {
+        override val fechaOrden: String = data.created_at
+        override val km: Int = data.kilometraje
+    }
+
+    data class GastoMantenimiento(val data: Mantenimiento) : HistorialItem() {
+        override val fechaOrden: String = data.fecha
+        override val km: Int = data.kilometraje
+    }
+}

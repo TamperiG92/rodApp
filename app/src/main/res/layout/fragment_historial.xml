@@ -93,6 +93,7 @@
                         android:textColor="@color/button_blue"
                         android:textSize="12sp" />
                     <TextView
+                        android:id="@+id/tv_mantenimiento_count"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -129,6 +130,7 @@
                         android:textColor="#FF5722"
                         android:textSize="12sp" />
                     <TextView
+                        android:id="@+id/tv_gasto_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -193,8 +195,20 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- List of Activity -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_historial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/card_chart_placeholder"
+            tools:listitem="@layout/row_actividad_lleno" />
+
         <!-- Central Empty State -->
         <LinearLayout
+            android:id="@+id/layout_empty_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
